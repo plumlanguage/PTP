@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="IMG_6447.JPG" />
+    <None Remove="python.png" />
+    <None Remove="wow.jpg" />
+    <None Remove="zip.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cake.Powershell" Version="4.0.0" />
+    <PackageReference Include="HandyControl" Version="3.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="res\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="IMG_6447.JPG" />
+    <Resource Include="python.png" />
+    <Resource Include="wow.jpg" />
+    <Resource Include="zip.png" />
+  </ItemGroup>
+
+</Project>
